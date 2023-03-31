@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cinema</title>
+	<style>
+		label{
+			display: block;
+			margin-top: 10px;
+		}
+		input[type="number"]{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+		}
+		input[type="submit"]{
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Cinema</h1>
+	<h2>Venta de boletas</h2>
+	<form>
+		<fieldset>
+			<legend>Datos de la función</legend>
+			<label for="pelicula">Pelicula:</label>
+			<select name="pelicula" id="pelicula">
+				<option value="funcion1">Función 1</option>
+				<option value="funcion2">Función 2</option>
+				<option value="funcion3">Función 3</option>
+				<option value="funcion4">Función 4</option>
+			</select>
+			<label for="tipo_boleta">Tipo de boleta:</label>
+			<select name="tipo_boleta" id="tipo_boleta">
+				<option value="normal">Normal</option>
+				<option value="preferencial">Preferencial</option>
+			</select>
+			<label for="cantidad_boletas">Cantidad de boletas:</label>
+			<input type="number" id="cantidad_boletas" name="cantidad_boletas" min="1" max="500">
+			<label for="numero_sillas">Número de sillas:</label>
+			<input type="number" id="numero_sillas" name="numero_sillas" min="1" max="100">
+			<input type="submit" value="Agregar venta">
+                        <legend>Detalle de venta</legend>
+
+                        <label for="tipo-boleta">Tipo de boleta:</label>
+                        <select id="tipo-boleta" name="tipo-boleta">
+                        <option value="normal">Normal</option>
+                        <option value="preferencial">Preferencial</option>
+                        </select>
+
+                        <br>
+
+                        <label for="num-silla">Número de silla:</label>
+                         <input type="number" id="num-silla" name="num-silla" min="1" max="100" disabled>
+		          </fieldset>
+	</form>
+	<h2>Resumen de ventas</h2>
+	<p>Total de ventas:</p>
+	<p>Ventas por función:</p>
+	<ul>
+		<li>Función 1:</li>
+		<li>Función 2:</li>
+		<li>Función 3:</li>
+		<li>Función 4:</li>
+	</ul>
+	<p>Película menos vista:</p>
+</body>
+</html>
